@@ -6,7 +6,8 @@
 		 for(int j=0;j<3;j++){
 			a=a.Insert(j,str[index].ToString());//заталкивае символы по одному
            ar[i]=a;
-           
+           if(index>=str.Length-1){index=0;j=3;} //останвливает цикл если символов не хватает в конце
+            index++;	
 		 }
         a="";//очищает строку
 		// Console.WriteLine(ar[i]);
